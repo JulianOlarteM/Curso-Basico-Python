@@ -1,0 +1,11 @@
+Ctrl + L = Limpiar pantalla
+CD = Change Directory
+.. = Carpeta anterior
+CD.. = Cambiar de directorio a la carpeta anterior
+Alt + 92 =
+ls = list
+mkdir = Make directory
+touch = para crear archivo
+py = incia la consola interactiva de python
+exit() : asi salgo de la consola de python y vuelvo a la consola normal.
+

@@ -1,0 +1,272 @@
+OPERADORES DE PYTHON:
+
+     5 + 5 :suma
+     5 - 5  :resta
+     5 * 4  :multiplicacion
+     10 / 5 :divicion
+     21 // 5 :divicion enteros, sin el residuo
+     25 % 5 :el residuo de la divicion
+     2 ** 5 :potencias
+
+¿Que operadores se resulven primero en las operaciones metematicas ?
+  Primero parentesis, despues potencias y raicez, depues multiplicaciones y divicones, 
+  por ultimo sumas y restas.
+  Pyhton lo entinede y lo hace asi.
+
+¿Que es una variable? 
+  Lugar donde puedo asignar un valor, y tiene un nombre especifico.
+ * No puede iniciar por numero
+ * Tienen que estar en miniscula
+ * Si tine mas de una palabra se separa con _
+
+Tipos de datos:  
+
+ * Numeros enteros: 5 , 6 , -3 , -10
+ * Numero de tipo flotante: Numero que no son exactos 5.1 , 10.4 , -10.6
+ * Texto (cadenas de caracteres): Son llamados como Strings.
+ * Booleanos: Verdadero o falso
+
+     Ejemplos Pyhton:
+
+     ASIGNACION DE VARIABLES
+     >>> numero=3   :numero entero
+     >>> numero1=6  :numero entero
+     >>> numero2=9  :numero entero
+     >>> nombre = "Julian David Olarte Martinez" :Strings
+     >>> nombre2= 'Andrea Vargas'                :Strings
+     >>> es_estudiante = True     :Booleanos
+     >>> trabaja = False          :Booleanos
+
+     OPERACIONES CON VARIABLES:
+
+     >>> numero + numero1 + numero2
+     18
+     >>> numero + numero1 // numero2
+     3
+     >>> numero + numero1 / numero2
+     3.6666666666666665
+
+     >>> nombre + nombre2
+     'Julian David Olarte Martinez y Andre Vargas'
+
+     >>> nombre*5
+     'Julian David Olarte MartinezJulian David Olarte MartinezJulian David Olarte MartinezJulian David Olarte MartinezJulian David Olarte Martinez'
+
+CONVERTIR UN DATO EN OTRO DIFERENTE
+
+     * Input("") para pedirle al usuario que introduzca datos.
+     * int() con datos o variables dentro de parentesis para convertirlo en número entero.
+     * str() para convertir números tanto decimales como enteros a strings.
+      * float() con convertir en variable de tipo flotante
+
+OPERADORES LOGICOS Y DE COMPARACION
+
+  * and : compara si dos o mas variables cumplen alguna consdicion
+  * or :  determian si alguna de las varibles cumple alguna condicion.
+  * not : expluye alguna varibale, o cambie el estado de los booleanos.
+     
+     EJEMPLOS PYTHON
+     
+     >>> es_estudiante = True
+     >>> es_estudiante
+     True
+
+     >>> trabaja = False
+     >>> trabaja
+     False
+
+     >>> es_estudiante and trabaja
+     False
+
+     >>> es_estudiante or trabaja
+     True
+     
+     >>> not es_estudiante
+     False
+     
+     >>> not trabaja
+     True
+
+
+  * == :COMPARA SI DOS O MAS VARIABLES SON IGUALES
+  * != :cOMPARA SI DOS O MAS VARIBALES SON DIFERENTES ENTRE SI
+  * >  :COMAPRA SI UNA VARIABLE ES MAYOR QUE OTRA
+  * <  :COMAPRA SI UNA VARIBLE ES MENOR QUE OTRA
+  * >= :MAYOR O IGUAL
+  * <= :MENOR O IGUAL
+
+    EJEMPLOS PYTHON
+     >>> numero1=5
+     >>> numero2=5
+     >>> numero3= 7
+
+     >>> numero1 == numero2
+     True
+      
+     >>> numero1 == numero3
+     False
+
+     >>> numero1 != numero3
+     True
+
+     >>> numero1 > numero3
+     False
+
+     >>> numero1 < numero3
+     True
+
+     >>> numero1 <= numero3
+     True
+
+     >>> numero1 >= numero3
+     False
+
+     >>> numero1 >= numero2
+     True
+
+CONDICIONALES
+ 
+  *if  : Condisional SI
+  *else : Consisional SINO
+ 
+METODOS
+ Son funciones especiales que solo funcionan con algún tipo de dato en particular.
+ Para mandarlas a llamar se usa:
+    …
+    variable.metodo()
+    …
+
+CADENAS DE CARACTERES 
+ METODOS PARA DATOS DE TIPO 
+ Strings Entre las mas usadas para el tipo de dato String están:
+
+     *  variable.upper: Convierte la cadena de texto en matusculas.
+     *  variable.capitalize: Cambia la primer letra de una cadena de texto por mayuscula.
+     *  variable.strip: Elimina los espacios innecesarios.
+     *  variable.lower: Remplaza las mayúsculas en una cadena de texto por minúsculas.
+     *  variable.replace(‘inserta’, ‘remplaza’): Remplaza una parte de la cadena por otro, el primer parámetro sera lo que agregara o insertara y el segundo parámetro es lo que quitara para agregar el primer parámetro.
+     *  len(variable): Te indica la longitud de la cadena de texto dentro de la variable.
+
+SLICES
+
+     Traducidos al español como “rebanadas”, nos permiten dividir los caracteres
+     de un string de múltiples formas. A continuación, un ejemplo de estos.
+
+          EJEMPLOS PYTHON
+
+               nombre = "Francisco"
+               nombre
+               "Francisco"
+
+               nombre[0 : 3) //Arranca desde el primer índice hasta llegar antes del 3° índice.
+               "Fra"
+
+               nombre[:3] //Va desde el principio hasta antes de llegar del 3° índice. Cómo no hay ningún parámetro en el primer lugar, se interpreta que arranca desde el principio.
+               "Fra"
+
+               nombre[1:7] //Arranca desde el índice 1 hasta llegar antes del 7.
+               "rancis"
+
+               nombre[1:7:2] //Arranca desde el índice 1 hasta llegar antes del 7, pero pasos de 2 en 2, ya que eso es lo que nos indica el 3! parámetro, el cual es 2.
+               
+               nombre[1::3] //Arranca desde el índice 1 hasta el final del string (al no haber ningún 2° parámetro, significa que va hasta el final), pero en pasos de 3 en 3.
+               "rcc"
+
+               nombre[::-1]  //Al no haber parámetro en los 2 primeros lugares, se interpreta que se arranca desde el inicio hasta el final, pero en pasos de 1 en 1 con la palabra al revés, porque es -1.
+               "ocsicnarF"
+
+BUCLES
+    *while : condicional Mintras
+    *for : condicional PARA
+
+LISTAS
+    Permiten guardar varios tipos de datos en una sola varible.
+
+     **Suma **(+) Concatena dos o más listas:
+     a=[1,2]
+     b=[3,4]
+     a + b --> [1,2,3,4]
+
+     **Multiplicación **(*) Repite la misma lista:
+     a=[1,2]
+     a* 2 —> [1,2,1,2]
+
+     **Añadir elemento al final de la lista:
+     a=[1]
+     a.append(2)=[1,2]
+
+     **Eliminar elemento al final de la lista:
+     a=[1,2]
+     b=a.pop()
+     a=[1]
+
+     **Eliminar elemento con su posicion especifica.
+     objetos= [1, 'HOLA', 0.1, True, False, 'Como estas']
+     >>> objetos.pop(4)
+     False
+     >>> objetos.pop(4)
+     'Como estas'
+     >>> objetos
+     [1, 'HOLA', 0.1, True]
+
+     **Eliminar elemento **dado un indice:
+     a=[1,2]
+     b=a.pop(1)
+     a=[2]
+
+     **Ordenar lista de menor a mayor, esto modifica la lista inicial
+     a=[3,8,1]
+     a.sort() —> [1,3,8]
+
+     **Ordenar lista de menor  a mayor, esto NO modifica la lista inicial
+     a=[3,8,1]
+     a.sorted() —> [1,3,8]
+
+     **Eliminar elementos de lista Elimina el elemento de la lista dado su indice
+     a=[1,2,3]
+     del a[0] —> a[2,3]
+
+     **Eliminar elementos de lista Elimina el elemento de la lista dado su valor
+     a=[0, 2, 4, 6, 8]
+     a.remove(6)
+     a=[0, 2, 4, 8]
+
+     **Range **creacion de listas en un rango determinado
+     a=(list(range(0,10,2))) -->crea un conteo desde 0 hasta 10 en pasos de 2 en 2.
+     a=[0,2,4,6,8]
+
+     **Tamaño lista len Devuelve el valor del tamaño de la lista:
+     a=[0,2,4,6,8]
+     len(a)=5
+
+TUPLAS
+     las tuplas funcionan de manera mas EFICIENTE en bucles y en el procesoS interno de python, porque no son dinamicas como laslistas
+     La diferencia  que las tuplas tienen con las listas, es que no se le pueden modificar ningun tipo de dato
+
+     mi_tupla=(1,2,3,4,5)
+     >>> mi_tupla
+     (1, 2, 3, 4, 5)
+      
+      >>> mi_tupla.append(9)
+      Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      AttributeError: 'tuple' object has no attribute 'append'
+
+     >>> mi_tupla.pop(1)
+     Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+     AttributeError: 'tuple' object has no attribute 'pop'
+
+     >>> for i in mi_tupla:
+     ...     print(i)
+     ...
+     1
+     2
+     3 
+     4
+     5
+
+¿QUE SON LOS DICCIONARIOS?
+     Un diccionario es la estructura de cirtos datos aparitr de llaves y valores
+     accedemos a ellos atraves de sus llaves, no de sus indices como en las listas.
+     
